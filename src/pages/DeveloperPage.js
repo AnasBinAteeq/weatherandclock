@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import '../styles/Menu.css';
+import Menu from '../components/Menu';
     
 function DeveloperPage() {
 
     return (
     <div>
+    <Menu/>
         <h2>This is Developer Page</h2>
     </div>
     );

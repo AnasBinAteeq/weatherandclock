@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Menu from './components/Menu';
+import WelcomePage from './pages/WelcomePage';
 import WeatherPage from './pages/WeatherPage';
 import ClockPage from './pages/ClockPage';
 import GithubPage from './pages/GithubPage';
@@ -10,9 +11,8 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Menu />
         <Routes>
-          <Route path="/" exact element={<WeatherPage/>} />
+          <Route path="/" exact element={<WelcomePage/>} />
           <Route path="/weather" element={<WeatherPage/>} />
           <Route path="/clock" element={<ClockPage/>} />
           <Route path="/github" element={<GithubPage/>} />

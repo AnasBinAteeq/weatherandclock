@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.WelcomeContent {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    overflow: hidden;
+}
+
+.Title {
+    font-size: 150px;
+    font-family: 'Bebas Neue', sans-serif;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+
+.Weather {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: showup 7s infinite;
+}
+
+.Clock {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0px;
+    animation: reveal 7s infinite;
+}
+
+.Clock span {
+    margin-left: -355px;
+    animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+
+    20% {
+        margin-left: -800px;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+
+    30% {
+        width: 400px;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        width: 400px;
+    }
+}
+
+.Continue {
+    border-radius: 20px;
+    text-decoration: none;
+    overflow: hidden;
+    background-color: #212529;
+    color: #fff;
+    font-size: 32px;
+    padding: 10px 30px;
+    margin-top: -50px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    /* box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7); */
+    
+    display: inline-block;
+    position: relative;
+}
+
+.Continue:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 7px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.Continue:hover {
+    padding-right: 24px;
+    padding-left: 4px;
+}
+
+.Continue:hover:after {
+    opacity: 1;
+    right: 25px;
+}
