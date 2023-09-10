@@ -6,6 +6,7 @@
     background: rgb(238, 174, 202);
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     overflow: hidden;
+    opacity: 1;
 }
 
 .Title {
@@ -13,6 +14,7 @@
     font-family: 'Bebas Neue', sans-serif;
     padding-bottom: 0px;
     margin: 0px;
+    margin-bottom: -130px;
 }
 
 
@@ -105,12 +107,11 @@
     color: #fff;
     font-size: 32px;
     padding: 10px 30px;
-    margin-top: -50px;
     width: 220px;
     transition: all 0.5s;
     cursor: pointer;
     /* box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7); */
-    
+
     display: inline-block;
     position: relative;
 }
@@ -133,3 +134,24 @@
     opacity: 1;
     right: 25px;
 }
+.Building {
+    position: absolute;
+    opacity: 0.2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto; /* To maintain the aspect ratio of the image */
+    /* z-index: -1; To place it behind other content */
+  }
+  
+  .WelcomeLocation{
+    background-color: #94b9df;
+    width: 80%;
+    text-align: center;
+    font-size: larger;
+    color: #212529;
+  }
+
+  .ipDetail{
+    font-weight: 700;
+  }

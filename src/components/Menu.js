@@ -34,7 +34,7 @@ function Menu() {
                 </NavLink>
             </NavItem>
             <NavItem className='d-flex'>
-                <NavLink className='mx-3' activeClassName="active" tag={RRNavLink} to="/github">
+                <NavLink className='mx-3' href='https://github.com/AnasBinAteeq/weatherandclock'>
                 GitHub
                 </NavLink>
             </NavItem>

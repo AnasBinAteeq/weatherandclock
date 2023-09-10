@@ -15,7 +15,6 @@ function App() {
           <Route path="/" exact element={<WelcomePage/>} />
           <Route path="/weather" element={<WeatherPage/>} />
           <Route path="/clock" element={<ClockPage/>} />
-          <Route path="/github" element={<GithubPage/>} />
           <Route path="/developer" element={<DeveloperPage/>} />
           <Route path="/aboutus" element={<AboutPage/>} />
         </Routes>
