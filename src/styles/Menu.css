@@ -10,3 +10,9 @@
     font-weight: 300;
     letter-spacing: 0px;
 }
+
+.active{
+    font-weight: 700;
+    border-radius: 50px;
+    color: #212529;
+}
