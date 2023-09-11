@@ -3,6 +3,10 @@ import Menu from '../components/Menu';
     
 function WeatherPage() {
 
+    const [weatherData, setWeatherData]=useState({});
+
+    
+
     return (
 
     <div>
